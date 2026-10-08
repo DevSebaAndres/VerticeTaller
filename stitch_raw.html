@@ -1,0 +1,843 @@
+<!DOCTYPE html><html class="dark" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>@layer base{html,body{margin:0;padding:0;background-color:#0E0E0E;color:#E5E2E1;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{width:6px;height:6px;}::-webkit-scrollbar-track{background:#0e0e0e;}::-webkit-scrollbar-thumb{background:#2a2a2a;border-radius:3px;}::-webkit-scrollbar-thumb:hover{background:#d92525;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-dark": "#0E0E0E",
+        "surface-card": "#151517",
+        "surface-container": "#1E1E22",
+        "surface-container-high": "#27272B",
+        "surface-container-low": "#121214",
+        "vivid-red": "#D92525",
+        "primary": "#D92525",
+        "primary-hover": "#B91C1C",
+        "telemetry-green": "#10B981",
+        "telemetry-cyan": "#06B6D4",
+        "telemetry-amber": "#F59E0B",
+        "secondary": "#A3A3A3",
+        "muted-gray": "#737373",
+        "border-dark": "rgba(255,255,255,0.08)",
+        "border-glow": "rgba(217,37,37,0.3)"
+      },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"]
+      }
+    }
+  }
+};
+</script></head><body class="bg-surface-dark font-sans text-neutral-200 antialiased selection:bg-vivid-red selection:text-white">
+<!-- HEADER TÉCNICO VÉRTICE -->
+<header class="fixed top-0 w-full z-50 bg-[#0E0E0E]/90 backdrop-blur-xl border-b border-white/10">
+<div class="h-20 max-w-[1320px] mx-auto px-6 flex items-center justify-between">
+<!-- Brand -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-10 h-10 rounded-lg bg-vivid-red flex items-center justify-center text-white shadow-lg shadow-vivid-red/30 ring-1 ring-white/20 transition-transform group-hover:scale-105">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-black text-xl text-white tracking-wider uppercase leading-none">VÉRTICE</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-mono font-bold bg-white/10 text-neutral-300 border border-white/10">PRO</span>
+</div>
+<span class="font-mono text-[10px] text-muted-gray uppercase tracking-widest mt-0.5">Performance &amp; Telemetría Dark</span>
+</div>
+</a>
+<!-- Navigation -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-xs font-mono font-bold uppercase tracking-widest text-vivid-red transition-colors flex items-center gap-1.5" href="#">
+<span class="w-1.5 h-1.5 rounded-full bg-vivid-red animate-pulse"></span>01. Telemetría
+      </a>
+<a class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors" href="#servicios-matriz">
+        02. Servicios Box
+      </a>
+<a class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors" href="#metodo-transparente">
+        03. Método Transparente
+      </a>
+<a class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors" href="#garantia">
+        04. Garantía 10k km
+      </a>
+<a class="text-xs font-mono font-bold uppercase tracking-widest text-neutral-400 hover:text-white transition-colors" href="#contacto">
+        05. Contacto
+      </a>
+</nav>
+<!-- Header Actions -->
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex flex-col text-right font-mono text-[11px] leading-tight text-neutral-400 border-r border-white/10 pr-3">
+<span class="text-telemetry-green font-semibold flex items-center justify-end gap-1"><span class="w-1.5 h-1.5 rounded-full bg-telemetry-green"></span>BOX ABIERTO</span>
+<span class="">08:00 - 18:30 HS</span>
+</div>
+<a class="inline-flex items-center justify-center gap-2 h-10 px-4 rounded-lg bg-vivid-red hover:bg-primary-hover text-white font-mono text-xs font-bold uppercase tracking-wider transition-all shadow-lg shadow-vivid-red/30 border border-red-500/30" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20solicitar%20un%20diagn%C3%B3stico%20de%20telemetr%C3%ADa" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+<span class="">Pedir Turno</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface-dark overflow-hidden">
+<!-- HERO PERFORMANCE & TELEMETRÍA CINEMATOGRÁFICO -->
+<section class="relative w-full min-h-[720px] lg:min-h-[820px] bg-surface-dark text-white flex items-center border-b border-white/10">
+<!-- Fondo Vehículo Deportivo con Grilla Cyber-Auto -->
+<div class="absolute inset-0 z-0">
+<img alt="Vehículo deportivo rojo de alta gama con iluminación de estudio de precisión" class="w-full h-full object-cover object-right lg:object-[82%_center] opacity-80 filter contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWfRw_swTJeD7-Z3oclTJ6Jymq8pDgqo9PYtlWDGpLql5QCCCEtGU2t_UInV07wICvmUFYRSeDij2ThsB1Dbf29TYXdVrMaDCE1lISpygxxXG141QLN5-3DZlmmqx0kltztt8RT_l2qseJg8twWFxDDmYv95dFgiGo3BzVj2WWrbO-LpeIZyLjWcO76lQYVbLT05yFXIbpgMbPOtvWtOYxY4KtGHO1kFwGIgQbjXlf">
+<!-- Superposiciones de Dark Mode y gradiente de alto contraste -->
+<div class="absolute inset-0 bg-gradient-to-r from-[#0E0E0E] via-[#0E0E0E]/95 sm:via-[#0E0E0E]/85 lg:via-[#0E0E0E]/70 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0E0E0E] via-transparent to-[#0E0E0E]/70"></div>
+<!-- HUD Grid overlay styling -->
+<div class="absolute inset-0 bg-[radial-gradient(#D92525_1px,transparent_1px)] [background-size:24px_24px] opacity-15 pointer-events-none"></div>
+</div>
+<div class="max-w-[1320px] mx-auto px-6 py-16 lg:py-24 relative z-10 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Columna de Título e Información Principal (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<!-- Live Telemetry Status Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-black/60 border border-vivid-red/40 text-neutral-200 mb-6 backdrop-blur-md shadow-lg shadow-black/40">
+<span class="w-2 h-2 rounded-full bg-telemetry-green animate-ping"></span>
+<span class="font-mono text-[11px] uppercase tracking-wider text-neutral-300">TELEMETRÍA EN VIVO • VÉRTICE MOTORES S.R.L.</span>
+<span class="text-[10px] font-mono px-1 rounded bg-vivid-red text-white font-bold ml-1">TUCUMÁN</span>
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.08] mb-6">
+            Diagnóstico Computarizado <br class="hidden sm:inline">y <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-white">Mecánica de Precisión</span> en Tucumán.
+          </h1>
+<p class="text-base sm:text-lg text-neutral-300 mb-8 max-w-xl leading-relaxed">
+            Reporte técnico digital con fotos y videos por WhatsApp de cada pieza antes de autorizar cualquier reparación. Cero gastos sorpresa y presupuesto validado en menos de 2 horas.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
+<a class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-vivid-red hover:bg-primary-hover text-white font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-xl shadow-vivid-red/35 border border-red-500/40 group" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20solicitar%20un%20presupuesto" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+<span class="">Pedir Turno por WhatsApp</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg bg-surface-container/90 hover:bg-surface-container-high border border-white/10 text-neutral-200 font-mono text-xs uppercase tracking-wider transition-all backdrop-blur-md" href="#metodo-transparente">
+<span class="">Método Transparente</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<!-- Micro Metricas en Barra Técnico Dark -->
+<div class="grid grid-cols-3 gap-3 w-full max-w-lg bg-[#141416]/90 backdrop-blur-xl p-4 rounded-xl border border-white/10 shadow-2xl">
+<div class="flex flex-col">
+<span class="font-mono text-2xl font-bold text-vivid-red">12+ Años</span>
+<span class="font-mono text-[10px] text-muted-gray uppercase tracking-wider">Trayectoria NOA</span>
+</div>
+<div class="flex flex-col border-l border-white/10 pl-3">
+<span class="font-mono text-2xl font-bold text-white">6 Meses</span>
+<span class="font-mono text-[10px] text-muted-gray uppercase tracking-wider">O 10.000 KM Garantía</span>
+</div>
+<div class="flex flex-col border-l border-white/10 pl-3">
+<span class="font-mono text-2xl font-bold text-telemetry-green">BOSCH</span>
+<span class="font-mono text-[10px] text-muted-gray uppercase tracking-wider">Matriculados COPIT</span>
+</div>
+</div>
+</div>
+<!-- HUD INTERACTIVO DE TELEMETRÍA CAN-BUS & SENSORES (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col">
+
+</div>
+</div>
+</div>
+</section>
+<!-- TIRA DE CERTIFICACIONES INDUSTRIALES DARK -->
+<section class="w-full bg-[#0a0a0c] py-4 border-b border-white/10" id="tecnologia">
+<div class="max-w-[1320px] mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-neutral-400 font-mono text-xs uppercase tracking-wider">
+<div class="flex items-center gap-2">
+<svg class="w-4 h-4 text-vivid-red" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+<span class="">Certificación Bosch Car Service</span>
+</div>
+<div class="flex items-center gap-2">
+<svg class="w-4 h-4 text-vivid-red" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="16" rx="2" width="16" x="4" y="4"></rect><rect height="6" width="6" x="9" y="9"></rect><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"></path></svg>
+<span class="">Técnicos Matriculados COPIT</span>
+</div>
+<div class="flex items-center gap-2">
+<svg class="w-4 h-4 text-vivid-red" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 14v4"></path><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path><path d="m15.5 8.5-3.5 3.5"></path></svg>
+<span class="">Reporte Fotográfico &amp; Video WhatsApp</span>
+</div>
+<div class="flex items-center gap-2">
+<svg class="w-4 h-4 text-vivid-red" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+<span class="">Repuestos Originales Garantizados</span>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: LOS 5 SERVICIOS PRINCIPALES (BOX TÉCNICO 01 A 05) -->
+<section class="w-full py-20 lg:py-28 bg-surface-dark border-b border-white/10" id="servicios-matriz">
+<div class="max-w-[1320px] mx-auto px-6">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="inline-flex items-center gap-2 text-vivid-red font-mono text-xs uppercase tracking-widest font-bold mb-2">
+<span class="w-2 h-2 rounded-full bg-vivid-red"></span>
+            ÁREAS DE INTERVENCIÓN TÉCNICA
+          </div>
+<h2 class="text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Los 5 Servicios Principales de Box</h2>
+<p class="text-neutral-400 mt-2 max-w-xl text-sm sm:text-base">
+            Ingeniería y calibración automotriz con instrumental homologado, asignación de box técnico y trazabilidad completa.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<a class="font-mono text-xs text-vivid-red hover:text-white uppercase tracking-wider flex items-center gap-1.5 transition-colors font-bold px-4 py-2.5 rounded-lg bg-surface-card border border-white/10 hover:border-vivid-red/40" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20consultar%20por%20un%20servicio" rel="noopener noreferrer" target="_blank">
+<span class="">Consultar Disponibilidad de Box</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg>
+</a>
+</div>
+</div>
+<!-- Grid de 5 Servicios Técnicos en Dark Card Style -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="services-grid">
+<!-- Box 01: Diagnóstico Electrónico -->
+<div class="group bg-surface-card rounded-2xl overflow-hidden border border-white/10 hover:border-vivid-red/50 transition-all duration-300 flex flex-col shadow-xl hover:shadow-vivid-red/10">
+<div class="relative h-52 w-full overflow-hidden bg-black">
+<img alt="Mecánico certificado operando escáner de diagnóstico láser sobre bloque motor V8" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf5qXwe4FBK0PphKPrKABX1bRRexVHz9k5DbFUZPPAatogr7DCb0-GOQ61c6PM3EGifO8ZITXAnMzrc9cgQ0Z2Ju_EXmWHaquAwJL6YODpRwHkCwTHbce5t8WYssZ1vbZG9SfgqXZVJHhusOFZnPA-d3tT0EU35praF97wp9cgGXcLGx4boEz6YyaLWDsRvpx_Gm_5Csw1ysfl0p0Cu9c3xu9ymRyA8oFw32WeNzYj">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-black/40 to-transparent"></div>
+<!-- Box Number Badge -->
+<div class="absolute top-4 left-4 font-mono font-extrabold text-xs px-2.5 py-1 rounded bg-black/80 text-white border border-white/15">
+              BOX 01
+            </div>
+<!-- Grado Tag -->
+<span class="absolute bottom-4 left-4 font-mono text-[11px] bg-vivid-red text-white px-2.5 py-1 rounded font-bold uppercase tracking-wider">
+              Diagnóstico
+            </span>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-vivid-red transition-colors">
+                1. Diagnóstico Electrónico Computarizado
+              </h3>
+<p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-4">
+                Escaneo profundo de sensores, lectura certera de fallas OBD-II, testeo de módulos de inyección electrónica y reseteo técnico de testigos de tablero con instrumental Bosch homologado.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-white/10 font-mono text-xs">
+<span class="text-neutral-500">Bosch KTS / CAN-BUS</span>
+<a class="text-vivid-red font-bold hover:text-white transition-colors flex items-center gap-1" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20solicitar%20diagn%C3%B3stico%20electr%C3%B3nico%20computarizado" rel="noopener noreferrer" target="_blank">
+<span class="">Agendar Box</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Box 02: Mantenimiento Preventivo -->
+<div class="group bg-surface-card rounded-2xl overflow-hidden border border-white/10 hover:border-vivid-red/50 transition-all duration-300 flex flex-col shadow-xl hover:shadow-vivid-red/10">
+<div class="relative h-52 w-full overflow-hidden bg-black">
+<img alt="Inspección de fluidos y mantenimiento preventivo programado" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfRYXzD0bWRlP3RVUzBBlGoqH2huR5S5p62umPfVv-sJbnurYmpMcFkpbDSrXsFwiOXyglfVph6ueCWovbEHO72akFDWQ5EbbtowOWP45AQ0N-fLa3BDkS77f2TXADoKzoyB3l_YLGDQc5qGZWMNrIJkkeYgnoOmO4-pH2Du1IpALO3wkOZXne47urJiJ1QwH8oV2BAdgnfWq4DIREraWVlIxh7qj1jqkqqIYbinbh">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-black/40 to-transparent"></div>
+<div class="absolute top-4 left-4 font-mono font-extrabold text-xs px-2.5 py-1 rounded bg-black/80 text-white border border-white/15">
+              BOX 02
+            </div>
+<span class="absolute bottom-4 left-4 font-mono text-[11px] bg-vivid-red text-white px-2.5 py-1 rounded font-bold uppercase tracking-wider">
+              Mantenimiento
+            </span>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-vivid-red transition-colors">
+                2. Mantenimiento Preventivo Integral
+              </h3>
+<p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-4">
+                Cambio de aceite sintético según especificación de fábrica, sustitución de filtros (aire, aceite, habitáculo, combustible), inspección de correas y revisión multipunto de 25 puntos de seguridad.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-white/10 font-mono text-xs">
+<span class="text-neutral-500">Service 10.000 KM</span>
+<a class="text-vivid-red font-bold hover:text-white transition-colors flex items-center gap-1" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20presupuesto%20para%20mantenimiento%20preventivo" rel="noopener noreferrer" target="_blank">
+<span class="">Agendar Box</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Box 03: Mecánica Pesada y Distribución -->
+<div class="group bg-surface-card rounded-2xl overflow-hidden border border-white/10 hover:border-vivid-red/50 transition-all duration-300 flex flex-col shadow-xl hover:shadow-vivid-red/10">
+<div class="relative h-52 w-full overflow-hidden bg-black">
+<img alt="Mecatrónico ensamblando transmisión automática y distribución de motor" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXk4YnY4kig9JopgGv0UNqC57QEnls4B1cksq4JMA4mZBQPJ5O8z3-hJ44k3mloZMFDAPzA4yP0zKWDsJaUSH0gk-Bt-trPqFE25dDBHleKXMMk31ZeF23zj2PgYMAVHxye62PeyMEwbBxzHPQRMNwKD4wkopM1IjaAotmmidJ6V9XuCErqvKorpJBYtz51GzIOzWvFcTpj7yZLYacCjJIVkJiDR2RPplQhZimBwpM">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-black/40 to-transparent"></div>
+<div class="absolute top-4 left-4 font-mono font-extrabold text-xs px-2.5 py-1 rounded bg-black/80 text-white border border-white/15">
+              BOX 03
+            </div>
+<span class="absolute bottom-4 left-4 font-mono text-[11px] bg-vivid-red text-white px-2.5 py-1 rounded font-bold uppercase tracking-wider">
+              Mecánica Pesada
+            </span>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-vivid-red transition-colors">
+                3. Mecánica Pesada y Distribución
+              </h3>
+<p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-4">
+                Cambio de kit de distribución completo (correa/cadena y bomba de agua), embragues, reparación de tapas de cilindro y ajustes de motor bajo tolerancias exactas con torquímetro digital.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-white/10 font-mono text-xs">
+<span class="text-neutral-500">Distribución OEM</span>
+<a class="text-vivid-red font-bold hover:text-white transition-colors flex items-center gap-1" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20necesito%20cambio%20de%20distribuci%C3%B3n%20o%20mec%C3%A1nica%20pesada" rel="noopener noreferrer" target="_blank">
+<span class="">Agendar Box</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Box 04: Frenos, Suspensión y Tren Delantero -->
+<div class="group bg-surface-card rounded-2xl overflow-hidden border border-white/10 hover:border-vivid-red/50 transition-all duration-300 flex flex-col shadow-xl hover:shadow-vivid-red/10">
+<div class="relative h-52 w-full overflow-hidden bg-black">
+<img alt="Inspección de suspensión y alineación láser 3D" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4yFpvcERCg1oy9vj2qrCU9R3L_9iKlqpFlmaiq5EzLK08kIrX3E7JtG694HReq4JpovTaJY_QlGO8HCEcNG3P_s1BR-BEAIFGqG7BTSFsOTOb1wQ-b2S3XwrAHPVjTPN6Y6PEI4LeP_QjC9gwjI2KuaHZqXh_erqS7yu01sCntRhG1eULUHRURr5oFIxs6r_Ma9LaOawI05stiQlvuvJZtuQgmFcwMxP-bBAUvVF7">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-black/40 to-transparent"></div>
+<div class="absolute top-4 left-4 font-mono font-extrabold text-xs px-2.5 py-1 rounded bg-black/80 text-white border border-white/15">
+              BOX 04
+            </div>
+<span class="absolute bottom-4 left-4 font-mono text-[11px] bg-vivid-red text-white px-2.5 py-1 rounded font-bold uppercase tracking-wider">
+              Frenos &amp; Tren Delantero
+            </span>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-vivid-red transition-colors">
+                4. Frenos, Suspensión y Tren Delantero
+              </h3>
+<p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-4">
+                Rectificación de discos de freno, pastillas cerámicas u orgánicas de primera línea, reemplazo de amortiguadores, bujes, rótulas y alineación 3D computarizada de alta precisión.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-white/10 font-mono text-xs">
+<span class="text-neutral-500">Seguridad Activa</span>
+<a class="text-vivid-red font-bold hover:text-white transition-colors flex items-center gap-1" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20revisar%20frenos%20y%20suspensi%C3%B3n" rel="noopener noreferrer" target="_blank">
+<span class="">Agendar Box</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Box 05: Climatización Automotor -->
+<div class="group bg-surface-card rounded-2xl overflow-hidden border border-white/10 hover:border-vivid-red/50 transition-all duration-300 flex flex-col shadow-xl hover:shadow-vivid-red/10 md:col-span-2 lg:col-span-1">
+<div class="relative h-52 w-full overflow-hidden bg-black flex items-center justify-center">
+<div class="absolute inset-0 bg-gradient-to-br from-black via-[#181820] to-[#250d0e]"></div>
+<div class="relative z-10 flex flex-col items-center text-center p-6">
+<div class="w-14 h-14 rounded-2xl bg-vivid-red/20 border border-vivid-red/40 flex items-center justify-center text-vivid-red mb-2 shadow-lg shadow-vivid-red/20">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path><path d="M8 12h8"></path><path d="m5 9 3 3-3 3"></path><path d="m19 9-3 3 3 3"></path></svg>
+</div>
+<span class="font-mono text-xs text-neutral-300 font-bold tracking-widest uppercase">R134a / R1234yf</span>
+</div>
+<div class="absolute top-4 left-4 font-mono font-extrabold text-xs px-2.5 py-1 rounded bg-black/80 text-white border border-white/15">
+              BOX 05
+            </div>
+<span class="absolute bottom-4 left-4 font-mono text-[11px] bg-vivid-red text-white px-2.5 py-1 rounded font-bold uppercase tracking-wider">
+              Climatización
+            </span>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between">
+<div>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-vivid-red transition-colors">
+                5. Climatización Automotor Integral
+              </h3>
+<p class="text-xs sm:text-sm text-neutral-400 leading-relaxed mb-4">
+                Carga milimétrica de gas refrigerante ecológico con balanza digital de precisión, prueba de vacío para detección de microfugas UV y desinfección antibacteriana de ductos.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-white/10 font-mono text-xs">
+<span class="text-neutral-500">Test UV &amp; Vacío</span>
+<a class="text-vivid-red font-bold hover:text-white transition-colors flex items-center gap-1" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20hacer%20la%20carga%20de%20aire%20acondicionado" rel="noopener noreferrer" target="_blank">
+<span class="">Agendar Box</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 01: EL REPORTE DIGITAL POR WHATSAPP (MÉTODO TRANSPARENTE) -->
+<section class="w-full py-20 lg:py-28 bg-[#101012] border-b border-white/10" id="metodo-transparente">
+<div class="max-w-[1320px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Columna izquierda: Información y pasos (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-2 text-vivid-red font-mono text-xs uppercase tracking-widest font-bold mb-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"></path></svg>
+<span class="">TRANSPARENCIA RADICAL • PROTOCOLO VÉRTICE</span>
+</div>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15] mb-5">
+El Reporte Digital por WhatsApp: Ves lo que nosotros vemos antes de pagar
+</h2>
+<p class="text-neutral-300 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
+No creemos en presupuestos verbales sin evidencia. Cada vehículo ingresado pasa por una inspección fotográfica y de video en alta definición. Solo autorizás el trabajo cuando viste con tus propios ojos el estado de cada componente.
+</p>
+<!-- Tres pasos secuenciales -->
+<div class="w-full space-y-4 mb-9">
+<!-- Item 1 -->
+<div class="p-4 sm:p-5 rounded-xl bg-surface-card border border-white/10 flex items-start gap-4 transition-all duration-300 hover:border-vivid-red/40 hover:bg-[#19191d]">
+<div class="w-9 h-9 rounded-lg bg-vivid-red/15 border border-vivid-red/30 text-vivid-red font-mono font-bold text-sm flex items-center justify-center shrink-0">
+1
+</div>
+<div>
+<h3 class="text-white font-bold text-sm sm:text-base mb-1">
+Video en fosa con audio explicativo del técnico
+</h3>
+<p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+El mecánico matriculado señala el juego axial, fuga o desgaste en tiempo real mientras el auto está en el elevador.
+</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-4 sm:p-5 rounded-xl bg-surface-card border border-white/10 flex items-start gap-4 transition-all duration-300 hover:border-vivid-red/40 hover:bg-[#19191d]">
+<div class="w-9 h-9 rounded-lg bg-vivid-red/15 border border-vivid-red/30 text-vivid-red font-mono font-bold text-sm flex items-center justify-center shrink-0">
+2
+</div>
+<div>
+<h3 class="text-white font-bold text-sm sm:text-base mb-1">
+Captura de pantalla de los códigos de falla OBD-II
+</h3>
+<p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+Exportación del informe KTS Bosch con el código DTC exacto, sin inventar reparaciones innecesarias.
+</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-4 sm:p-5 rounded-xl bg-surface-card border border-white/10 flex items-start gap-4 transition-all duration-300 hover:border-vivid-red/40 hover:bg-[#19191d]">
+<div class="w-9 h-9 rounded-lg bg-vivid-red/15 border border-vivid-red/30 text-vivid-red font-mono font-bold text-sm flex items-center justify-center shrink-0">
+3
+</div>
+<div>
+<h3 class="text-white font-bold text-sm sm:text-base mb-1">
+Desglose de repuestos nuevos vs. piezas sustituidas
+</h3>
+<p class="text-neutral-400 text-xs sm:text-sm leading-relaxed">
+Al retirar tu unidad te entregamos las piezas reemplazadas en cajas originales si deseás inspeccionarlas.
+</p>
+</div>
+</div>
+</div>
+<!-- CTA Button and Response Time -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2.5 h-12 px-6 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-black font-mono text-xs uppercase tracking-wider font-extrabold transition-all shadow-xl shadow-[#25D366]/20 border border-emerald-400/40" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20solicitar%20una%20demo%20del%20reporte%20digital" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.529 1.761.78 2.791.78h.001c3.181 0 5.768-2.587 5.769-5.767 0-3.18-2.587-5.765-5.77-5.765zm3.374 8.167c-.145.407-.738.747-1.02.77-.282.023-.623.107-2.02-.451-1.688-.675-2.774-2.39-2.859-2.502-.084-.112-.684-.912-.684-1.74 0-.829.434-1.238.589-1.395.155-.157.34-.196.453-.196.113 0 .227.001.325.006.104.005.244-.039.381.29.145.348.496 1.21.54 1.298.044.088.073.19.014.306-.058.116-.088.188-.175.29-.087.102-.184.228-.263.306-.087.087-.178.182-.077.356.102.174.453.748.971 1.21 668.595 1.231.78 1.405.867.174.087.276.073.379-.044.102-.116.436-.508.552-.682.116-.174.233-.145.393-.087.16.058 1.017.48 1.192.567.174.087.291.13.334.204.043.073.043.422-.102.829zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.966-1.394A9.954 9.954 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2a8.17 8.17 0 0 1-4.167-1.144l-.299-.178-3.093.867.876-3.023-.195-.311A8.17 8.17 0 1 1 12 20.2z"></path></svg>
+<span class="">SOLICITAR DEMO DE REPORTE</span>
+</a>
+<div class="flex items-center gap-2 text-xs font-mono text-neutral-400">
+<span class="w-2 h-2 rounded-full bg-telemetry-green animate-pulse"></span>
+<span class="">Respuesta promedio: &lt; 15 min</span>
+</div>
+</div>
+</div>
+<!-- Columna derecha: Mockup WhatsApp Dark Device (5 Cols) -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-full max-w-[400px] rounded-[36px] bg-[#0c0d10] p-3.5 shadow-2xl border-2 border-white/10 ring-1 ring-black/80 relative">
+<!-- Screen Inner container -->
+<div class="w-full rounded-[28px] bg-[#111317] overflow-hidden border border-white/5 flex flex-col font-sans">
+<!-- Chat header -->
+<div class="bg-[#1a1d24] px-4 py-3 border-b border-white/5 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-vivid-red text-white font-extrabold flex items-center justify-center text-sm shadow-md">
+V
+</div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-[#25D366] border-2 border-[#1a1d24]"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-sm font-bold text-white leading-tight">Vértice Taller Integral</span>
+<svg class="w-3.5 h-3.5 text-telemetry-cyan fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+</div>
+<span class="text-[11px] text-neutral-400 leading-tight">En línea • Cuenta de Empresa</span>
+</div>
+</div>
+<div class="text-neutral-400 p-1">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</div>
+</div>
+<!-- Chat area -->
+<div class="p-3.5 space-y-3 bg-[#0d0e12] text-xs">
+<!-- Date badge -->
+<div class="flex justify-center">
+<span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white/5 text-neutral-400 uppercase tracking-wider">Hoy</span>
+</div>
+<!-- Bubble from workshop: Text message -->
+<div class="max-w-[90%] rounded-2xl rounded-tl-sm bg-[#1e222b] p-3 text-neutral-200 border border-white/5 shadow-md">
+<div class="font-mono text-[10px] text-vivid-red font-bold uppercase tracking-wider mb-1 flex items-center gap-1">
+<svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+<span class="">Ing. Mec. Matrícula COPIT Nº 4812</span>
+</div>
+<p class="leading-relaxed text-[11px] text-neutral-200">
+Hola Carlos! Terminamos el escaneo KTS de tu Amarok. Detectamos sensor MAP con valor descalibrado y pastillas de freno delanteras al 15% de espesor útil.
+</p>
+<div class="text-right text-[9px] font-mono text-neutral-500 mt-1">10:42 AM</div>
+</div>
+<!-- Bubble from workshop: Video Item -->
+<div class="max-w-[90%] rounded-2xl rounded-tl-sm bg-[#1e222b] p-2 border border-white/5 shadow-md overflow-hidden">
+<div class="relative rounded-xl overflow-hidden bg-black aspect-video flex items-center justify-center group cursor-pointer">
+<img alt="Diagnóstico fosa en Amarok con medición micrométrica" class="w-full h-full object-cover opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4yFpvcERCg1oy9vj2qrCU9R3L_9iKlqpFlmaiq5EzLK08kIrX3E7JtG694HReq4JpovTaJY_QlGO8HCEcNG3P_s1BR-BEAIFGqG7BTSFsOTOb1wQ-b2S3XwrAHPVjTPN6Y6PEI4LeP_QjC9gwjI2KuaHZqXh_erqS7yu01sCntRhG1eULUHRURr5oFIxs6r_Ma9LaOawI05stiQlvuvJZtuQgmFcwMxP-bBAUvVF7">
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="w-10 h-10 rounded-full bg-vivid-red/90 text-white flex items-center justify-center pl-0.5 shadow-lg group-hover:scale-110 transition-transform">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+</div>
+<div class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-black/80 font-mono text-[9px] text-white font-bold border border-white/10">
+0:42 • VIDEO TALLER
+</div>
+</div>
+<div class="px-1.5 pt-2 pb-1">
+<p class="text-[11px] text-neutral-300 font-medium">VIDEO: Medición de espesor con calibre en disco delantero derecho.</p>
+<div class="text-right text-[9px] font-mono text-neutral-500 mt-0.5">10:44 AM</div>
+</div>
+</div>
+<!-- Bubble from workshop: Presupuesto PDF -->
+<div class="max-w-[90%] rounded-2xl rounded-tl-sm bg-[#1e222b] p-2.5 border border-white/5 shadow-md flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-vivid-red/20 border border-vivid-red/40 text-vivid-red flex items-center justify-center shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+</div>
+<div class="truncate">
+<div class="text-xs font-bold text-white truncate">Presupuesto_OT_2841.pdf</div>
+<div class="text-[10px] text-neutral-400 font-mono">Garantía 6 meses • Repuestos OEM</div>
+</div>
+</div>
+<div class="p-1 text-neutral-400 hover:text-white shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+</div>
+</div>
+<!-- Bubble from customer: Reply -->
+<div class="ml-auto max-w-[85%] rounded-2xl rounded-tr-sm bg-[#0a472e] p-3 text-neutral-100 border border-emerald-500/20 shadow-md">
+<p class="leading-relaxed text-[11px]">
+Perfecto, muchas gracias por el video. Autorizo el cambio de pastillas y el sensor. Procedan por favor.
+</p>
+<div class="flex items-center justify-end gap-1 text-[9px] font-mono text-emerald-300 mt-1">
+<span class="">10:48 AM</span>
+<svg class="w-3.5 h-3.5 text-emerald-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 6 7 17l-5-5"></path><path d="m22 10-7.5 7.5L13 16"></path></svg>
+</div>
+</div>
+</div>
+<!-- Mockup chat input footer -->
+<div class="p-2.5 bg-[#14171d] border-t border-white/5 flex items-center gap-2">
+<div class="flex-grow bg-[#0c0d10] rounded-full px-3 py-1.5 text-[11px] text-neutral-500 border border-white/5">
+Escribe un mensaje...
+</div>
+<div class="w-7 h-7 rounded-full bg-[#25D366] text-black flex items-center justify-center shrink-0">
+<svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 02: TALLER HOMOLOGADO CON RESPALDO LEGAL -->
+<section class="w-full py-20 lg:py-28 bg-surface-dark border-b border-white/10" id="homologacion">
+<div class="max-w-[1320px] mx-auto px-6">
+<!-- Encabezado de sección -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center justify-center gap-2 text-vivid-red font-mono text-xs uppercase tracking-widest font-bold mb-3">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+<span class="">SEGURIDAD JURÍDICA Y RESPALDO PROFESIONAL</span>
+</div>
+<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
+Taller Homologado con Respaldo Legal
+</h2>
+<p class="text-neutral-400 text-sm sm:text-base leading-relaxed">
+En Tucumán, no dejes tu automóvil en manos informales. Vértice Motores S.R.L. opera bajo normativas provinciales y nacionales estrictas.
+</p>
+</div>
+<!-- Grilla de 4 tarjetas en dark styling -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Matrícula COPIT -->
+<div class="bg-surface-card rounded-2xl border border-white/10 p-6 flex flex-col justify-between transition-all duration-300 hover:border-vivid-red/50 hover:bg-[#18181c] shadow-xl group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-vivid-red/15 border border-vivid-red/30 text-vivid-red flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><rect height="16" rx="2" width="16" x="4" y="4"></rect><rect height="6" width="6" x="9" y="9"></rect><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"></path></svg>
+</div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-vivid-red block mb-1.5">
+REGISTRO OFICIAL
+</span>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-vivid-red transition-colors">
+Matrícula COPIT Nº 4812
+</h3>
+<p class="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-6">
+Colegio Profesional de Ingenieros y Técnicos de Tucumán. Firmas de responsabilidad técnica en cada intervención pesada.
+</p>
+</div>
+<div class="pt-4 border-t border-white/10 font-mono text-xs text-telemetry-green font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-telemetry-green"></span>
+<span class="">Matriculado activo 2025</span>
+</div>
+</div>
+<!-- Card 2: Bosch Car Service -->
+<div class="bg-surface-card rounded-2xl border border-white/10 p-6 flex flex-col justify-between transition-all duration-300 hover:border-vivid-red/50 hover:bg-[#18181c] shadow-xl group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-telemetry-green flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+</div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-telemetry-green block mb-1.5">
+INSTRUMENTAL HOMOLOGADO
+</span>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-telemetry-green transition-colors">
+Bosch Car Service
+</h3>
+<p class="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-6">
+Escáneres Bosch KTS, bancos de prueba de inyección common rail y osciloscopios calibrados semestralmente.
+</p>
+</div>
+<div class="pt-4 border-t border-white/10 font-mono text-xs text-neutral-300 font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-telemetry-cyan"></span>
+<span class="">Protocolo de red mundial</span>
+</div>
+</div>
+<!-- Card 3: Factura A y B Electrónica -->
+<div class="bg-surface-card rounded-2xl border border-white/10 p-6 flex flex-col justify-between transition-all duration-300 hover:border-vivid-red/50 hover:bg-[#18181c] shadow-xl group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-sky-950/60 border border-sky-500/40 text-telemetry-cyan flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line></svg>
+</div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-telemetry-cyan block mb-1.5">
+FISCAL AFIP / ARCA
+</span>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-telemetry-cyan transition-colors">
+Factura A y B Electrónica
+</h3>
+<p class="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-6">
+Vértice Motores S.R.L. Emisión inmediata para flotas comerciales, empresas del agro, contratistas y particulares.
+</p>
+</div>
+<div class="pt-4 border-t border-white/10 font-mono text-xs text-neutral-300 font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-telemetry-cyan"></span>
+<span class="">Aptitud para deducción fiscal</span>
+</div>
+</div>
+<!-- Card 4: Inspección de Repuestos -->
+<div class="bg-surface-card rounded-2xl border border-white/10 p-6 flex flex-col justify-between transition-all duration-300 hover:border-vivid-red/50 hover:bg-[#18181c] shadow-xl group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-amber-950/60 border border-amber-500/40 text-telemetry-amber flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+</div>
+<span class="text-[10px] font-mono font-bold uppercase tracking-widest text-telemetry-amber block mb-1.5">
+CUSTODIA DE PIEZAS
+</span>
+<h3 class="text-lg font-bold text-white mb-2 group-hover:text-telemetry-amber transition-colors">
+Inspección de Repuestos
+</h3>
+<p class="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-6">
+Conservamos y te entregamos cada pieza cambiada en la caja del repuesto nuevo. Cero dudas sobre sustituciones reales.
+</p>
+</div>
+<div class="pt-4 border-t border-white/10 font-mono text-xs text-telemetry-amber font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-telemetry-amber"></span>
+<span class="">Transparencia total de inventario</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: GARANTÍA ESCRITA Y MAPA INTERACTIVO DARK GOOGLE MAPS -->
+<section class="w-full py-20 lg:py-28 bg-surface-dark border-b border-white/10" id="garantia">
+<div class="max-w-[1320px] mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Garantía y Datos de Confianza (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="inline-flex items-center gap-2 text-vivid-red font-mono text-xs uppercase tracking-widest font-bold mb-2">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            RESPALDO PROFESIONAL HOMOLOGADO
+          </div>
+<h2 class="text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight mb-4">
+            Garantía Escrita de 6 Meses o 10.000 km y Respaldo Profesional
+          </h2>
+<p class="text-neutral-300 text-base leading-relaxed mb-8">
+            Cada perno ajustado a par nominal, sensor recodificado y kit de distribución instalado cuenta con cobertura real sobre mano de obra y repuestos originales. Más de 12 años brindando seguridad mecánica comprobable en San Miguel de Tucumán y todo el NOA.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+<div class="p-4 rounded-xl bg-surface-card border border-white/10 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-vivid-red/20 text-vivid-red shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+</div>
+<div>
+<strong class="text-white text-sm block">Reporte WhatsApp</strong>
+<span class="text-neutral-400 text-xs">Registro multimedia en tiempo real de tu motor.</span>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-surface-card border border-white/10 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-emerald-950/80 border border-emerald-500/30 text-telemetry-green shrink-0">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+</div>
+<div>
+<strong class="text-white text-sm block">Matrícula COPIT / Bosch</strong>
+<span class="text-neutral-400 text-xs">Mecánicos certificados en inyección y CAN-BUS.</span>
+</div>
+</div>
+</div>
+<!-- Cuadro de Llamada Rápida -->
+<div class="p-4 sm:p-5 rounded-xl bg-surface-card border border-white/10 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+<div>
+<span class="font-mono text-xs text-vivid-red uppercase tracking-wider block font-bold">Línea de Taller Vértice</span>
+<span class="text-xl font-bold font-mono text-white tracking-tight">+54 381 424-9988</span>
+</div>
+<a class="inline-flex items-center justify-center gap-2 h-11 px-6 rounded-lg bg-vivid-red hover:bg-primary-hover text-white font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-lg shadow-vivid-red/25" href="tel:+543814249988">
+<span class="">Llamar al Box</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Tarjeta Interactiva Google Maps Dark UI (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#14171d] flex flex-col">
+<!-- Canvas Vectorial Mapa Dark Tucumán -->
+<div class="relative w-full h-[420px] overflow-hidden bg-[#101318]">
+<svg class="absolute inset-0 w-full h-full opacity-70" preserveAspectRatio="xMidYMid slice" viewBox="0 0 600 450">
+<rect fill="#101318" height="450" width="600"></rect>
+<!-- Manzanas urbanas San Miguel de Tucumán -->
+<rect fill="#191e26" height="80" rx="4" width="140" x="30" y="40"></rect>
+<rect fill="#191e26" height="80" rx="4" width="180" x="200" y="40"></rect>
+<rect fill="#191e26" height="80" rx="4" width="140" x="410" y="40"></rect>
+<rect fill="#191e26" height="110" rx="4" width="140" x="30" y="150"></rect>
+<rect fill="#191e26" height="110" rx="4" width="180" x="200" y="150"></rect>
+<rect fill="#191e26" height="110" rx="4" width="140" x="410" y="150"></rect>
+<rect fill="#191e26" height="110" rx="4" width="140" x="30" y="290"></rect>
+<rect fill="#191e26" height="110" rx="4" width="180" x="200" y="290"></rect>
+<rect fill="#191e26" height="110" rx="4" width="140" x="410" y="290"></rect>
+<!-- Parque / Zona verde -->
+<rect fill="#0f261c" height="60" opacity="0.6" rx="6" width="110" x="45" y="165"></rect>
+<!-- Calles urbanas -->
+<line stroke="#212733" stroke-width="14" x1="0" x2="600" y1="135" y2="135"></line>
+<line stroke="#212733" stroke-width="14" x1="0" x2="600" y1="275" y2="275"></line>
+<line stroke="#212733" stroke-width="16" x1="185" x2="185" y1="0" y2="450"></line>
+<line stroke="#212733" stroke-width="16" x1="395" x2="395" y1="0" y2="450"></line>
+<!-- Avenida Belgrano (Arteria Principal) -->
+<line stroke="#2c3444" stroke-width="26" x1="0" x2="600" y1="205" y2="205"></line>
+<line stroke="#D92525" stroke-dasharray="10 8" stroke-width="2.5" x1="0" x2="600" y1="205" y2="205"></line>
+<!-- Rutas de conexión rápida Gran Tucumán (Yerba Buena & San José) -->
+<path d="M 0 205 Q 185 190 300 205 T 600 220" fill="none" opacity="0.7" stroke="#06B6D4" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<text fill="#cbd5e1" font-family="JetBrains Mono" font-size="10" font-weight="700" letter-spacing="0.08em" x="205" y="196">AV. BELGRANO 2450</text>
+<text fill="#64748b" font-family="JetBrains Mono" font-size="8" font-weight="500" x="205" y="226">SAN MIGUEL DE TUCUMÁN (T4000)</text>
+<!-- Halo de ubicación -->
+<circle cx="300" cy="205" fill="#D92525" opacity="0.2" r="48"></circle>
+<circle cx="300" cy="205" fill="#D92525" opacity="0.4" r="24"></circle>
+</svg>
+<!-- Tarjeta Flotante Tipo Google Maps (Top Left) -->
+<div class="absolute top-3 left-3 z-20 max-w-[270px] bg-[#14171d]/95 backdrop-blur-md rounded-xl p-3 border border-white/10 shadow-2xl">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h4 class="text-white font-bold text-xs leading-tight">Vértice Motores S.R.L.</h4>
+<p class="text-[11px] text-neutral-400 mt-0.5">Av. Belgrano 2450, Tucumán</p>
+</div>
+<span class="p-1.5 rounded-lg bg-vivid-red/20 text-vivid-red shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+</span>
+</div>
+<!-- Reseñas -->
+<div class="flex items-center gap-1.5 mt-2 pt-2 border-t border-white/10 text-xs">
+<span class="font-bold text-amber-400 text-xs font-mono">4.9</span>
+<div class="flex text-amber-400">
+<svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-3 h-3 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div>
+<span class="text-neutral-400 text-[10px]">(210+ reseñas)</span>
+</div>
+</div>
+<!-- Switch Capas Mapa / Satélite -->
+<div class="absolute top-3 right-3 z-20 flex rounded-lg overflow-hidden border border-white/10 shadow-lg text-[11px] font-mono">
+<button class="px-2.5 py-1 bg-vivid-red text-white font-bold" type="button">Mapa</button>
+<button class="px-2.5 py-1 bg-[#14171d]/90 text-neutral-400 hover:text-white" type="button">Satélite</button>
+</div>
+<!-- Pin Central de Ubicación -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full z-20 flex flex-col items-center pointer-events-none drop-shadow-2xl">
+<div class="px-2 py-0.5 rounded bg-black/90 text-white text-[10px] font-mono tracking-wider border border-white/20 whitespace-nowrap mb-1">
+                  VÉRTICE • AV. BELGRANO 2450
+                </div>
+<div class="w-9 h-9 rounded-full bg-vivid-red flex items-center justify-center text-white border-2 border-white shadow-xl ring-4 ring-vivid-red/30">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+</div>
+<div class="w-1 h-2.5 bg-vivid-red"></div>
+</div>
+<!-- Zoom Controls -->
+<div class="absolute bottom-3 right-3 z-20 flex flex-col rounded-lg overflow-hidden border border-white/10 bg-[#14171d]/90 backdrop-blur-md">
+<button aria-label="Acercar" class="w-7 h-7 flex items-center justify-center text-white hover:bg-white/10 border-b border-white/10 font-bold font-mono">+</button>
+<button aria-label="Alejar" class="w-7 h-7 flex items-center justify-center text-white hover:bg-white/10 font-bold font-mono">-</button>
+</div>
+<!-- Coordenadas Geográficas -->
+<div class="absolute bottom-2 left-3 z-20 flex items-center gap-2 text-[10px] font-mono text-neutral-500">
+<span class="px-1.5 py-0.5 rounded bg-black/60 border border-white/5">-26.82414, -65.23412</span>
+</div>
+</div>
+<!-- Cobertura y Botón Cómo Llegar -->
+<div class="p-4 bg-[#101318] border-t border-white/10 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-xs text-neutral-400">
+<span class="w-2 h-2 rounded-full bg-telemetry-green shrink-0"></span>
+<span class="">Corredor: San Miguel • Yerba Buena • San José</span>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-vivid-red hover:bg-primary-hover text-white font-mono text-xs uppercase tracking-wider font-bold transition-all shadow-md shadow-vivid-red/20" href="https://maps.google.com/?q=-26.82414,-65.23412" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+<span class="">Cómo Llegar (Google Maps)</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER TÉCNICO VÉRTICE DARK -->
+<footer class="w-full bg-[#08080A] text-white border-t border-white/10" id="contacto">
+<div class="max-w-[1320px] mx-auto px-6 pt-16 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+<!-- Columna Brand -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-vivid-red flex items-center justify-center text-white shadow-sm shadow-vivid-red/30">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+</div>
+<span class="font-extrabold text-lg text-white uppercase tracking-wider">VÉRTICE MOTORES</span>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed">
+          Vértice Taller Mecánico Integral (Vértice Motores S.R.L.). Más de 12 años brindando diagnóstico electrónico, mecánica pesada y mantenimiento con transparencia absoluta en Tucumán.
+        </p>
+<div class="flex items-center gap-2">
+<span class="text-[10px] font-mono bg-white/5 border border-white/10 text-telemetry-green px-2 py-1 rounded font-bold">Matrícula COPIT</span>
+<span class="text-[10px] font-mono bg-white/5 border border-white/10 text-vivid-red px-2 py-1 rounded font-bold">Bosch Service</span>
+</div>
+</div>
+<!-- Columna Servicios -->
+<div class="flex flex-col gap-2.5">
+<span class="font-mono text-xs uppercase tracking-wider text-white font-bold mb-1">Boxes de Servicio</span>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#servicios-matriz">01. Diagnóstico Electrónico Computarizado</a>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#servicios-matriz">02. Mantenimiento Preventivo Integral</a>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#servicios-matriz">03. Mecánica Pesada y Distribución</a>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#servicios-matriz">04. Frenos, Suspensión y Tren Delantero</a>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#servicios-matriz">05. Climatización Automotor Integral</a>
+</div>
+<!-- Columna Protocolo & Garantía -->
+<div class="flex flex-col gap-2.5">
+<span class="font-mono text-xs uppercase tracking-wider text-white font-bold mb-1">Protocolos de Taller</span>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#garantia">Garantía Escrita: 6 Meses o 10.000 KM</a>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#metodo-transparente">Reporte Técnico Digital por WhatsApp</a>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#metodo-transparente">Presupuesto Cerrado en &lt; 2 Horas</a>
+<a class="text-xs text-neutral-400 hover:text-white transition-colors" href="#metodo-transparente">Inspección de 25 Puntos de Seguridad</a>
+</div>
+<!-- Columna Contacto & Horarios -->
+<div class="flex flex-col gap-2 font-mono text-xs">
+<span class="uppercase tracking-wider text-white font-bold mb-1">Sede Central Tucumán</span>
+<p class="text-neutral-400 leading-tight">
+          Av. Belgrano 2450, T4000<br>San Miguel de Tucumán
+        </p>
+<p class="text-neutral-400 pt-1">
+          Fijo: <a class="hover:text-white transition-colors text-white" href="tel:+543814249988">+54 381 424-9988</a><br>
+          WhatsApp: <a class="hover:text-white transition-colors text-vivid-red" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20solicitar%20un%20presupuesto" rel="noopener noreferrer" target="_blank">+54 9 381 555-4821</a><br>
+          Email: <a class="hover:text-white transition-colors text-neutral-300" href="mailto:contacto@verticetaller.com.ar">contacto@verticetaller.com.ar</a>
+</p>
+<div class="mt-2 p-2 rounded bg-white/5 border border-white/5 text-[11px] text-neutral-400">
+<span class="text-telemetry-green font-bold">LUN A VIE:</span> 08:00 a 18:30 hs<br>
+<span class="text-neutral-300 font-bold">SÁB:</span> 08:30 a 13:00 hs
+        </div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-neutral-500">
+<span class="">
+        © 2025 Vértice Taller Mecánico Integral (Vértice Motores S.R.L.). San Miguel de Tucumán, Argentina.
+      </span>
+<div class="flex items-center gap-6">
+<a class="hover:text-white transition-colors" href="https://wa.me/5493815554821?text=Hola%20V%C3%A9rtice,%20quiero%20solicitar%20un%20presupuesto" rel="noopener noreferrer" target="_blank">Pedir Turno</a>
+<a class="hover:text-white transition-colors" href="#garantia">Garantía Escrita</a>
+<a class="hover:text-white transition-colors" href="mailto:contacto@verticetaller.com.ar">contacto@verticetaller.com.ar</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+</body></html>
