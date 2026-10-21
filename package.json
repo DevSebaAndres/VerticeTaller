@@ -1,0 +1,16 @@
+{
+  "name": "vertice_tallermecanico",
+  "version": "1.0.0",
+  "description": "Taller Mecanico Vertice - Landing Page",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^3.4.19",
+    "vite": "^5.0.0"
+  }
+}
