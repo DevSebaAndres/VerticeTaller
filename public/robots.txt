@@ -1,0 +1,22 @@
+# Permitir crawlers de indexación (AEO & Búsqueda)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Bloquear crawlers de entrenamiento de modelos (Opt-out de uso de datos para entrenamiento)
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+# Reglas generales para buscadores tradicionales (Googlebot, Bingbot, etc.)
+User-agent: *
+Allow: /
+
+Sitemap: https://verticetaller.com.ar/sitemap.xml
