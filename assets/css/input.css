@@ -34,3 +34,45 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #d92525;
 }
+
+/* ==========================================================
+   SCROLL REVEAL & STAGGER - ALTO RENDIMIENTO (COMPOSITOR GPU)
+   ========================================================== */
+
+/* Estado inicial: solo se oculta cuando JS confirma soporte activo */
+html.reveal-ready .reveal-header:not(.is-revealed),
+html.reveal-ready .reveal-card:not(.is-revealed) {
+  opacity: 0;
+  transform: translateY(36px);
+}
+
+.reveal-header,
+.reveal-card {
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+/* Escalonado visible para las tarjetas con retraso progresivo */
+.reveal-card {
+  transition-delay: calc(var(--stagger, 0) * 120ms);
+}
+
+/* Estado revelado al ingresar en el viewport */
+.reveal-header.is-revealed,
+.reveal-card.is-revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Accesibilidad: Reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready .reveal-header:not(.is-revealed),
+  html.reveal-ready .reveal-card:not(.is-revealed),
+  .reveal-header,
+  .reveal-card {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
